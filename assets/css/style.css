@@ -1,0 +1,630 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir-400.eot");
+  src: url("../fonts/vazir-400.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/vazir-400.woff2") format("woff2"),
+    url("../fonts/vazir-400.woff") format("woff"),
+    url("../fonts/vazir-400.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir-700.eot");
+  src: url("../fonts/vazir-700.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/vazir-700.woff2") format("woff2"),
+    url("../fonts/vazir-700.woff") format("woff"),
+    url("../fonts/vazir-700.ttf") format("truetype");
+  font-weight: 700;
+}
+
+/* Navbar styles */
+#language {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  font-family: "vazir";
+  font-size: 13px;
+}
+
+#languageIcon {
+  width: 15px;
+  margin: 0 5px;
+}
+
+.rtl_wrapper #language {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  font-family: "vazir";
+  font-size: 13px;
+}
+
+.bg-light {
+  background-color: #fff !important;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+}
+
+.collapse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.3rem !important;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 1rem !important;
+  margin-top: 2rem;
+}
+
+/* --------- LTR styles --------- */
+
+/* Home page styles */
+.main_header {
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.main_header_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_header_info img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 100%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  border: 6px solid #fff;
+}
+
+.main_header_info img[src=""] {
+  display: none;
+}
+
+.main_header_info h1 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.main_header_info h2 {
+  color: #888;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.main_header_content h6:last-of-type {
+  margin-top: 4rem;
+}
+
+.main_header_content p {
+  text-align: justify;
+  margin: 0 !important;
+}
+
+#home_list {
+  padding: 0;
+  padding-left: 1rem;
+}
+
+.main_header ul {
+  padding: 0;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+#home_list li {
+  margin-bottom: 0.4rem;
+}
+
+#home_links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+#home_links a {
+  margin: 0 0.5rem;
+  width: 33px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.4rem;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+#home_links a:hover {
+  transform: scale(1.1);
+}
+
+#home_links img {
+  width: 100%;
+  height: auto;
+  box-shadow: none;
+  object-fit: contain;
+  border-radius: 0;
+  border: none;
+}
+
+/* Publications page styles */
+#publications_content {
+  margin-top: 1rem;
+}
+
+.publication_container {
+  margin-top: 3rem;
+}
+
+.publication_container .publications_header {
+  margin-bottom: 1rem;
+}
+
+.publication_container .publications_header span {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.publication_container .publications_header h2 {
+  display: inline;
+  font-size: 1.15rem;
+  text-align: justify;
+}
+
+.publication_container .publications_item {
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  position: relative;
+}
+
+.publication_container .publications_item::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -2rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.publication_container p {
+  text-align: justify;
+}
+
+.publication_container .publications_footer {
+  margin-bottom: 0.5rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e6e6e6;
+}
+
+.publication_container .publications_footer span {
+  margin: 0;
+  margin-right: 1rem;
+}
+
+.publication_container .publications_footer li {
+  margin-right: 2rem;
+  position: relative;
+}
+
+.publication_container .publications_footer li::before {
+  content: "";
+  position: absolute;
+  right: -1rem;
+  top: 12%;
+  height: 76%;
+  width: 1px;
+  background-color: #e6e6e6;
+}
+
+.publication_container .publications_footer li:last-of-type:before {
+  display: none;
+}
+
+.publication_container .publications_footer a {
+  color: blue;
+  text-decoration: none;
+}
+
+.publication_container .publications_footer span:last-of-type {
+  margin-left: 0.5rem;
+  font-weight: 500;
+}
+
+.publication_container .publications_span {
+  min-width: 60px;
+}
+
+/* Research page styles */
+#research_data p {
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+#research_data h2 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#research_data img {
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+/* Jobs page styles */
+#jobs_data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 3rem;
+}
+
+#jobs_data .job_item {
+  margin: 0;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+#jobs_data .job_item::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+#jobs_data .job_item::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 15px;
+  width: 2px;
+  height: calc(100% + 2rem);
+  background-color: #e6e6e6;
+}
+
+#jobs_data .job_item:last-of-type:before {
+  display: none;
+}
+
+#jobs_data .job_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#jobs_data .job_header div {
+  display: flex;
+  align-items: flex-end;
+}
+
+#jobs_data .job_header h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+#jobs_data .job_header h2 {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0;
+  margin-left: 0.4rem;
+}
+
+#jobs_data .job_header .job_location {
+  margin-left: 1rem;
+  position: relative;
+}
+
+#jobs_data .job_header .job_location::before {
+  content: "";
+  position: absolute;
+  left: -0.5rem;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background-color: #e6e6e6;
+}
+
+#jobs_data p {
+  margin-top: 0.5rem;
+  text-align: justify;
+}
+
+#jobs_data ul {
+  padding: 0;
+  padding-left: 1rem;
+}
+
+/* Contact page styles */
+#contact_data {
+  list-style: none;
+  margin-top: 3rem;
+  padding: 0;
+}
+
+#contact_data li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#contact_data img {
+  width: 30px;
+  margin-right: 1.5rem;
+}
+
+#contact_data p,
+#contact_data a {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+#contact_data a {
+  text-decoration: none;
+  color: rgb(5, 5, 216);
+}
+
+@media (max-width: 980px) {
+  .collapse {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  #language {
+    margin: 0.5rem 0;
+    margin-right: 1.1rem;
+    flex-direction: row !important;
+    width: 90px;
+    justify-content: flex-start !important;
+  }
+
+  .rtl_wrapper #language {
+    margin: 0.5rem 0;
+    margin-right: 0.8rem;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  /* Home page styles */
+  .main_header_info img {
+    width: 200px;
+    height: 200px;
+    margin-top: 1rem;
+  }
+
+  .main_header_info h1 {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .main_header_info h2 {
+    margin-bottom: 0.8rem;
+  }
+
+  .main_header_content h6:last-of-type {
+    margin-top: 3rem;
+  }
+
+  #home_links {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  #home_links a {
+    width: 32px;
+    margin: 0 0.4rem;
+  }
+
+  #home_links img {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Publications page styles */
+  .publication_container .publications_item {
+    margin-left: 1rem;
+  }
+
+  .publication_container .publications_item::before {
+    left: -1rem;
+  }
+
+  /* Jobs page styles */
+  #jobs_data .job_item {
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #jobs_data .job_item::before {
+    height: calc(100% + 2rem);
+  }
+
+  #jobs_data .job_header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #jobs_data .job_header div {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #jobs_data .job_header h1 {
+    font-size: 1.1rem;
+  }
+
+  #jobs_data .job_header h2 {
+    font-size: 1.1rem;
+    margin-left: 0.4rem;
+  }
+
+  /* Contact page styles */
+  #contact_data img {
+    width: 30px;
+  }
+}
+
+/* --------- Rtl styles --------- */
+
+/* Home page styles */
+.rtl_wrapper > * {
+  direction: rtl;
+  font-family: "vazir";
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.rtl_wrapper .main_header {
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.rtl_wrapper h1 {
+  font-size: 1.4rem;
+}
+
+.rtl_wrapper h2 {
+  font-size: 1.1rem;
+}
+
+.rtl_wrapper h6 {
+  padding-bottom: 3px;
+}
+
+.main_header_content p {
+  margin-top: 0.7rem !important;
+  text-align: justify;
+}
+
+.rtl_wrapper ul {
+  padding: 0;
+  padding-right: 1rem;
+}
+
+/* Publications page styles */
+.rtl_wrapper .publication_container .publications_header h2 {
+  display: inline;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: justify;
+  direction: rtl;
+}
+
+.rtl_wrapper .publication_container .publications_header span {
+  font-size: 0.89rem;
+}
+
+.rtl_wrapper .publication_container .publications_item {
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+  position: relative;
+}
+
+.rtl_wrapper .publication_container .publications_item::before {
+  right: -2rem;
+}
+
+.rtl_wrapper .publication_container .publications_footer span {
+  margin-left: 1rem;
+}
+
+.rtl_wrapper .publication_container .publications_footer li {
+  margin-right: 0;
+  margin-left: 2rem;
+  direction: rtl;
+  text-align: right;
+}
+
+.rtl_wrapper .publication_container .publications_footer li::before {
+  left: -1rem;
+  right: auto;
+}
+
+.rtl_wrapper .publication_container .publications_footer span:last-of-type {
+  margin-right: 0.5rem;
+}
+
+/* Jobs page styles */
+
+.rtl_wrapper #jobs_data .job_item {
+  padding-right: 2rem;
+}
+
+.rtl_wrapper #jobs_data .job_item::after {
+  right: 0px;
+}
+
+.rtl_wrapper #jobs_data .job_item::before {
+  right: 3px;
+}
+
+.rtl_wrapper #jobs_data h1 {
+  font-size: 1.1rem;
+}
+
+.rtl_wrapper #jobs_data h2 {
+  font-size: 0.95rem;
+  margin-right: 0.4rem;
+}
+
+.rtl_wrapper #jobs_data .job_header .job_location {
+  margin-right: 1rem;
+  margin-left: 0;
+  position: relative;
+}
+
+.rtl_wrapper #jobs_data .job_header .job_location::before {
+  right: -0.5rem;
+}
+
+.rtl_wrapper #jobs_data ul {
+  padding: 0;
+  padding-right: 1rem;
+}
+
+/* Contact page styles */
+.rtl_wrapper #contact_data img {
+  width: 30px;
+  margin-left: 1.5rem;
+  margin-right: 0;
+}
+
+.rtl_wrapper #contact_data a {
+  direction: ltr;
+}

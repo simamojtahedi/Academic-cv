@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/css/bootstrap.css" type="text/css" rel="stylesheet" />
+    <link href="./assets/css/aos.css" type="text/css" rel="stylesheet" />
+    <link href="./assets/css/style.css" type="text/css" rel="stylesheet" />
+
+    <!-- Fork this repository for free:  https://github.com/simamojtahedi -->
+
+    <script src="./assets/scripts/default.js"></script>
+    <script>
+      $(function () {
+        $("#include_navbar").load("./utils/navbar.html");
+      });
+    </script>
+
+    <title id="page_title"></title>
+  </head>
+  <body>
+    <div id="include_navbar"></div>
+
+    <div class="container pt-4" data-aos="fade-in" id="content_wrapper">
+      <h6 id="publications_type_one_title" class="title"></h6>
+      <div id="publications_type_one_data" class="publication_container"></div>
+
+      <h6 id="publications_type_two_title" class="title"></h6>
+      <div id="publications_type_two_data" class="publication_container"></div>
+
+      <h6 id="publications_type_three_title" class="title"></h6>
+      <div
+        id="publications_type_three_data"
+        class="publication_container"
+      ></div>
+
+      <h6 id="publications_type_four_title" class="title"></h6>
+      <div id="publications_type_four_data" class="publication_container"></div>
+    </div>
+  </body>
+
+  <script src="./assets/scripts/default.js"></script>
+  <script src="./assets/scripts/scripts.js"></script>
+  <script src="./data/global.js"></script>
+  <script src="./lang/fa.js"></script>
+  <script src="./lang/en.js"></script>
+  <script src="./data/publications.js"></script>
+</html>

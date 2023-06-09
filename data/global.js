@@ -23,4 +23,6 @@ const globalData = {
   linkedin: "https://www.linkedin.com/in/your_username/",
   githubTitle: "Github Username",
   github: "https://github.com/your_username",
+  orcidTitle: "Orcid Username",
+  orcid: "https://orcid.com/your_username",
 };

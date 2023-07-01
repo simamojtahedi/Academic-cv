@@ -1,3 +1,5 @@
+![academic_cv](https://github.com/simamojtahedi/simamojtahedi/assets/64223524/3b0a48fc-a5aa-4ff2-b6cb-3fc88e3d3b00)
+
 This is a repository for academic websites with support for both English and Farsi languages.
 
 This template support the kinds of content that academics have: publications, research, jobs, contact, and a dynamically-generated CV.

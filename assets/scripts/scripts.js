@@ -95,7 +95,7 @@ $(document).ready(function () {
       lang === "en" ? enHomePageData.home_content : faHomePageData.home_content;
   }
 
-  if (pathname === "/") {
+  if (pathname === "/" || pathname === "/index") {
     homeData();
   }
 

@@ -3540,7 +3540,6 @@
     }
   );
 });
-//# sourceMappingURL=bootstrap.min.js.map
 
 /*! jQuery v3.6.4 | (c) OpenJS Foundation and other contributors | jquery.org/license */
 !(function (e, t) {

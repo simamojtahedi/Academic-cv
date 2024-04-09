@@ -1,13 +1,21 @@
+
+# Academic CV
+
+Github Pages multi language template for academic personal websites which supports both RTL and LTR directions.
+
+This template support the kinds of content that academics have: **publications**, **research**, **jobs**, **contact**, and a **dynamically-generated CV**.\
+Fork [this repository](https://github.com/simamojtahedi/Academic-cv), modify the configuration and files, and have your own site for free by publishing this code on [GitHub pages](https://pages.github.com/) or any other domain.
+
+
+
+
+
+## Demo
+
+Here you can check Demo online: 
+[Demo](https://simamojtahedi-academic-cv.netlify.app/)
+
 ![academic_cv](https://github.com/simamojtahedi/simamojtahedi/assets/64223524/3b0a48fc-a5aa-4ff2-b6cb-3fc88e3d3b00)
-
-## About
-
-This is a repository for academic websites with support for both English and Farsi languages.
-
-This template support the kinds of content that academics have: publications, research, jobs, contact, and a dynamically-generated CV.
-
-You can fork [this repository](https://github.com/simamojtahedi/academic-resume), modify the configuration and files, and have your own site for free by publishing this code on [GitHub pages](https://pages.github.com/) or any other domain.
-
 ## Getting started
 
 1.Register a GitHub account.
@@ -33,3 +41,8 @@ In `lang` directory there are two files named `en.js` and `fa.js`.
 You can change data in these files based on your information for home, publications, research, jobs pages and navbar titles as provided template.
 
 \*\* Remeber to change both both `fa.js` and `en.js` files.
+
+## Authors
+
+- [@simamojtahedi](https://github.com/simamojtahedi)
+
